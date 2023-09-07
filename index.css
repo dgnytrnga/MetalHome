@@ -1,21 +1,21 @@
-
-body{
+body {
     background-color: black;
-    margin-top:10px;
+    margin-top: 10px;
     padding: 0%;
-}
-div{
+  }
+  div {
     display: block;
-}
-
-
-a {
-    background-image: linear-gradient(
-      to right,
-      brown,
-      red 50%,
-      aliceblue 50%
-    );
+  }
+  
+  :root {
+    --no-of-slides: 7;
+    --slides-in-view: 4;
+    --slide-width: 240px;
+    --iteration-time: 20s;
+  }
+  
+  a {
+    background-image: linear-gradient(to right, brown, red 50%, aliceblue 50%);
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-size: 200% 100%;
     background-position: -100%;
@@ -39,127 +39,125 @@ a {
   }
   
   a:hover {
-   background-position: 0;
+    background-position: 0;
   }
   
   a:hover::before {
-    width:100%;
+    width: 100%;
   }
-
-header{
+  
+  header {
     background: url(./İmages/head.jpg);
     display: block;
     height: 70px;
     width: 100%;
-}
-
-.header-div{
+  }
+  
+  .header-div {
     line-height: inherit;
-    flex-direction:row;
-    float: right;    
-}
-
-.form-wrapper{
+    flex-direction: row;
+    float: right;
+  }
+  
+  .form-wrapper {
     margin-top: 17px;
     float: right;
     margin-left: 1140px;
     position: relative;
-
-}
-
-.first-input{
+  }
+  
+  .first-input {
     width: 145px;
     border-style: none;
     margin: 10px;
-}
-
-.search-button{
+  }
+  
+  .search-button {
     color: white;
     background-color: black;
     border-style: none;
     margin-right: 15px;
-
-}
-
-.search-button:hover{
+  }
+  
+  .search-button:hover {
     transition: 0.5s;
     color: brown;
     background-color: black;
-}
-
-#main-line{
+  }
+  
+  #main-line {
     flex-direction: column;
-}
-
-#left-bar{
+  }
+  
+  #left-bar {
     display: inline-block;
     flex-direction: column;
     margin-top: 10px;
     float: left;
     height: 600px;
     width: 150px;
-    background-color:  #181818;
-    border-style:solid;
+    background-color: #181818;
+    border-style: solid;
     border-width: 4px;
     border-color: rgb(66, 66, 66);
     padding: 10px;
-}
-.login-logo{
+  }
+  .login-logo {
     margin-top: -10px;
     margin-left: -10px;
     width: 170px;
     height: 50px;
-}
-
-.username{
-    color: aliceblue;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: small;
-}
-
-.username-input{
-    width: 142px;
-    height: 15px;
-}
-
-.password{
+  }
+  
+  .username {
     color: aliceblue;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: small;
-}
-
-.inputdiv{
-    margin-top: -10px;
-}
-
-.password-input{
+  }
+  
+  .username-input {
     width: 142px;
     height: 15px;
-}
-
-.fpassword{
+  }
+  
+  .password {
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+  }
+  
+  .inputdiv {
+    margin-top: -10px;
+  }
+  
+  .password-input {
+    width: 142px;
+    height: 15px;
+  }
+  
+  .fpassword {
     padding-right: 4px;
     float: right;
     margin-top: 8px;
     color: grey;
     text-decoration: none;
     font-size: 11px;
-}
-
-.spassword{
+  }
+  
+  .spassword {
     float: left;
     margin-top: 8px;
     color: grey;
     text-decoration: none;
     font-size: 11px;
-}
-
-.loginbuttondiv{
+  }
+  
+  .loginbuttondiv {
     flex-direction: column;
     float: left;
-}
-
-.loginbutton{
+  }
+  
+  .loginbutton {
     color: white;
     background-color: black;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -168,82 +166,109 @@ header{
     height: 25px;
     margin-top: 15px;
     margin-bottom: 10px;
-}
-
-.loginbutton:hover{
+  }
+  
+  .loginbutton:hover {
     background-color: black;
     color: brown;
     border: solid 1px brown;
     transition: 0.5s;
-}
-
-.fpassword:hover{
+  }
+  
+  .fpassword:hover {
     transition: 0.5s;
-    color:brown;
-}
-
-.left-bar-in{
+    color: brown;
+  }
+  
+  .left-bar-in {
     position: absolute;
     margin-top: 100px;
     float: left;
     height: 300px;
     width: 146px;
-    background-color:  #181818;
-    border-style:solid;
+    background-color: #181818;
+    border-style: solid;
     border-width: 2px;
     border-color: rgb(66, 66, 66);
     padding: 0%;
-}
-
-.list{
+  }
+  
+  .list {
     padding: 10px;
     margin-top: 10px;
     color: brown;
     margin-left: 20px;
-    list-style:upper-roman;
-    
-}
-
-
-#middle-bar {
+    list-style: upper-roman;
+  }
+  
+  .forum{
+    margin-top: 10px;
+    margin-left: 12px;
+    font-size: 40px;
+    font-style: italic;
+    background-color: grey;
+    background-size: 500px;
+  }
+  
+  #middle-bar {
     margin: 10px;
-    width: 900px;
-    height: px;
-    border-style:double;
+    margin-left: 188px;
+    border-style: groove;
+    width: calc(var(--slide-width) * var(--slides-in-view));
     border-width: 5px;
-    border-color: grey;
-    overflow: hidden; 
+    border-color:grey;
+    overflow: hidden;
     position: relative;
-}
-
-
-.carousel-container {
+  }
+  
+  .carousel-container {
     display: flex;
-    width: calc(250px * 7);
-    animation: scroll 5s linear infinite; 
-}
-
-.carousel-slide {
-    flex: 0 0 100px; 
-    margin-right: 20px; 
-    transition: transform 1s ease;
-    padding: 10;
-}
-
-@keyframes scroll {
+    width: calc(var(--slide-width) * var(--no-of-slides) * 2);
+    animation: scroll var(--iteration-time) linear infinite;
+    padding: 10px;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-direction: column;
+    width: var(--slide-width);
+  }
+  
+  @keyframes scroll {
     0% {
-        transform: translateX(0px);
+      transform: translateX(calc(var(--slide-width) * -1 * var(--no-of-slides)));
     }
     100% {
-        transform: translateX(calc(250px*3.5));
+      transform: translateX(0);
     }
-}
-.band-logo {
-    width: 100px;
+  }
+  .band-logo {
     min-height: 75px;
     max-height: 75px;
-}
-
-.band-font{
-    margin-top: 25px;
-}
+  }
+  
+  .art-image{
+    height: 130px;
+    width: 12px;
+  }
+  
+  .full-top{
+    flex-direction: row;
+    padding: 10px;
+  }
+  
+  .right-bar{
+    margin-left: 1170px;
+    margin-top: -170px;
+    flex-direction: column;
+    border-style:groove;
+    border-color:grey;
+    border-width: 5px;
+    border-radius: 0px;
+    width: 390px;
+    height: 620px;
+  }
+  
+  
